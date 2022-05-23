@@ -66,8 +66,8 @@ Getting and Cleaning the Data collected from the accekerometers from smartfone.
    In "run_analysis.R"", merged data is "tableall".
    After that. change the numeric activity label data to the
 
-9
-)
+9. 
+
 
 
 8. 
