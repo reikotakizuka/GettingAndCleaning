@@ -4,6 +4,7 @@ run_analysis.R
 # Requirements
 1. Mac OS ver12.3.1
 2. R version 4.1.3 (2022-03-10)
+3. R package "stringr" ver1.4.0
 
 # Overview
 Getting and Cleaning the Data collected from the accelerometers from smartfone.
