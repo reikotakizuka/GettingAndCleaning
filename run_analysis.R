@@ -136,6 +136,10 @@ tableactivity <- tableall %>%
         select(-starts_with("SD"), -Species) %>% 
         group_by(activity, subject_id) %>%
         summarise_all(list(mean))
+colnames(tableactivity) <- colnames(tableactivity) %>% 
+        str_replace("^Mean", "avMean")
+colnames(tableactivity) <- colnames(tableactivity) %>% 
+        str_replace("^feature", "avfeature")
 write.table(tableactivity, "~/data//UCI HAR Dataset/tableactivity.csv", 
             row.name=FALSE,sep=",")
 
